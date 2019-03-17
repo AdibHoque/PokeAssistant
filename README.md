@@ -30,12 +30,16 @@ So here the guide exists to teach you how.
 The first step in creating a bot is to create your own Discord application. The bot will use the Discord API, which requires the creation of an account for authentication purposes. Don't worry though, it's super simple.
 #### Creating the application
 To create the application, head to https://discordapp.com/developers/applications/. Log in, and you'll reach a page that looks like this:
+
 ![](assets/1.png)
 
 Click on **Create an application**. This brings you to the following page, in which you should simply enter a name for the application. After clicking **Create**, you can also add an avatar. Click **Save Changes** afterwards.
+
 ![](assets/2.png)
+
 #### Creating the bot account
 After creating the application, we need to create the Bot User. Go to the Bot section on the left, then click on **Add Bot**, then **Yes, Do it**.
+
 ![](assets/3.png)
 
 There's a few things you can change here. 
