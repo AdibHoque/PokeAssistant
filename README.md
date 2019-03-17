@@ -3,7 +3,7 @@ A bot to help you with catching Pokemons on Pokecord.
 ## Information
 PokeAssistant is a bot aimed to help Pokecord players. It will tell you what Pokemon it is whenever Pokecord spawns one. As such, you no longer have to rack your brains or even search Google. Sometimes, you may just miss a rare Pokemon like this.
 ### Developer
-@CHamburr#2591
+CHamburr#2591
 ### How does it work?
 All the images from Pokecord are hashed into short strings, and stored in our database. When Pokecord spawns a Pokemon, PokeAssistant will hash it, then compare with the database and retrieve the name of the Pokemon.
 ### Bot is blacklisted?
@@ -43,8 +43,42 @@ After creating the application, we need to create the Bot User. Go to the Bot se
 ![](assets/3.png)
 
 There's a few things you can change here. 
-- Username: change your bot's username on Discord
-- Icon: change the bot's avatar
-- Public bot: toggles the ability for other users to add your bot to their server.
-- Require Oauth2 Code Grant: don't check this. Just, don't.
-####
+- Username: Change your bot's username on Discord
+- Icon: Change the bot's avatar
+- Public bot: Toggles the ability for other users to add your bot to their server.
+- Require Oauth2 Code Grant: Don't check this. Just, don't.
+#### Adding to your server
+To generate the invite link, click on **Oauth2** in the app page, and scroll down to **Scopes**. Check the **Bot** scope to generate a link. You can also add additional permissions for the bot.
+
+![](assets/4.png)
+
+Copy the link and open it, select your server and click on **Authorize**. Cheers, it has been added to your server.
+#### Getting the token
+Go to the **Bot** page and copy the token. Save it somewhere, you will need that later.
+
+![](assets/5.png)
+
+Source: https://anidiots.guide/getting-started/getting-started-long-version
+### Step 2: Hosting the bot
+The bot will be hosted on Glitch, so you need to create a Glitch account first: https://glitch.com/.
+#### Getting the code
+The code has already been setup, you only need to go to https://glitch.com/edit/#!/pokeassistant, click **pokeassistant** on the top left hand corner, then **Remix Project**. Be sure to login first, if not, the project will be deleted after a few days.
+
+![](assets/6.png)
+
+#### Configuration
+Go to .env file. All options are compulsory.
+- TOKEN: Put in the one you copied just now
+- OWNER: Your ID, for multiple owners separate with `,` (no spacing)
+- EVENTCHANNEL: ID of channel where the event logs go to
+- ERRORCHANNEL: ID of channel where the error logs go to
+- JOINLEAVECHANNEL: ID of channel where the join and leave logs for the bot go to
+
+An example would be:
+```
+TOKEN=NTU2NjQ2MjA1MDExMDAxMzQ1.D29B7Q.LcTk_nSujMXdVyFohpJpjF50odE
+OWNER=446290930723717120,458932042252419072
+EVENTCHANNEL=512601541341872129
+ERRORCHANNEL=512601576448327680
+JOINLEAVECHANNEL=511781018559315978
+```
