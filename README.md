@@ -91,4 +91,12 @@ The bot should be online now.
 ### Step 3: Keeping the bot online (Optional)
 Glitch shuts down projects that are inactive for over 5 minutes. The current code should already keep it up, but some users feedback that it doesn't. We will be using Uptime Robot to keep it up here. Create an account first: https://uptimerobot.com/signUp.
 
-After signing up, login and go to the Dashboard, click on **Create New Monitor**
+After signing up, login and go to the Dashboard, click on **Create New Monitor**, the configurations are as follows:
+
+![](assets/8.png)
+
+- Monitor Type: Choose HTTP(s)
+- Friendly Name: Literally anything
+- URL (or IP): Put `https://projectname.glitch.me`. Replace projectname with whatever your project's name is. You can get it by going to https://glitch.com. Under **Your Projects**, you should see the name of your project and the description. In my case it is `pokeassistant`.
+![](assets/9.png)
+- Monitoring Interval: 5 minutes
