@@ -1,0 +1,29 @@
+{
+  "name": "pokeassistant",
+  "version": "1.0.0",
+  "description": "Another amazing Discord bot!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "discord.js": "^11.4.2",
+    "imghash": "^0.0.3",
+    "request": "^2.88.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.2.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/pokeassistant"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
