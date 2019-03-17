@@ -100,3 +100,10 @@ After signing up, login and go to the Dashboard, click on **Create New Monitor**
 - URL (or IP): Put `https://projectname.glitch.me`. Replace projectname with whatever your project's name is. You can get it by going to https://glitch.com. Under **Your Projects**, you should see the name of your project and the description. In my case it is `pokeassistant`.
 ![](assets/9.png)
 - Monitoring Interval: 5 minutes
+
+Finally click **Create Monitor**. And you're done! Done with everything!
+
+## Additional Help
+You can get more help by joining our server https://discord.gg/TYe3U4w or DM CHamburr#2591.
+
+### Made by CHamburr#2591
