@@ -87,3 +87,8 @@ The file is automatically saved. But to refresh, you need to delete watch.json.
 ![](assets/7.png)
 
 The bot should be online now.
+
+### Step 3: Keeping the bot online (Optional)
+Glitch shuts down projects that are inactive for over 5 minutes. The current code should already keep it up, but some users feedback that it doesn't. We will be using Uptime Robot to keep it up here. Create an account first: https://uptimerobot.com/signUp.
+
+After signing up, login and go to the Dashboard, click on **Create New Monitor**
