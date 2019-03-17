@@ -82,3 +82,8 @@ EVENTCHANNEL=512601541341872129
 ERRORCHANNEL=512601576448327680
 JOINLEAVECHANNEL=511781018559315978
 ```
+The file is automatically saved. But to refresh, you need to delete watch.json.
+
+![](assets/7.png)
+
+The bot should be online now.
